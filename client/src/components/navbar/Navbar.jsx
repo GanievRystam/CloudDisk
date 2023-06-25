@@ -49,7 +49,9 @@ const Navbar = () => {
         navbar navbar-expand-lg navbar-light h-16">
             <div className="container m-auto">
                 <img src={Logo} alt="" className="h-12 w-12 object-cover rounded-full"/>
-                <div className="navbar__header">MERN CLOUD</div>
+                <NavLink to ='/'>
+                    <div className="navbar__header">MERN CLOUD</div>
+                </NavLink>
                 {!isAuth &&
                     <div className="navbar__login"><NavLink to="/login">Войти</NavLink></div>
                 }

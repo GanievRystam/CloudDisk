@@ -2,6 +2,7 @@ import axios from 'axios'
 import { setUser } from '../reducers/userReducer';
 import { changeEml } from '../reducers/changeDataReducer';
 import { API_URL } from '../config.js';
+
 export const registration = async (email, password) => {
     try{
         const response = await axios.post(`${API_URL}api/auth/registration`, {
